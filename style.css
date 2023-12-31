@@ -69,3 +69,13 @@ body {
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px) {
+  #countdown {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 1.5rem;
+  }
+}
