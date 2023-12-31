@@ -37,7 +37,6 @@ This project is licensed under the [MIT License](LICENSE.md).
 ## Acknowledgments
 
 - The project uses HTML, CSS, and JavaScript to create an engaging New Year countdown experience.
-- Background image source: [Unsplash](https://unsplash.com/)
 
 ## Author
 
