@@ -32,7 +32,7 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
