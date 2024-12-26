@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,6 +22,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #countdown {
@@ -29,11 +34,10 @@ body {
     align-items: center;
     font-size: 3rem;
     color: #fff;
-    /* background-color: #000; */
     padding: 1rem;
-    position: relative;
-    top: 40%;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.7); */
+    width: 90%;
+    max-width: 600px; 
+    text-align: center;
 }
 
 .countdown-item {
@@ -51,7 +55,7 @@ body {
 }
 
 .countdown-label {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
@@ -70,12 +74,43 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-  #countdown {
-    font-size: 2rem;
-  }
+/* Responsive Design */
 
-  .countdown-label {
-    font-size: 1.5rem;
-  }
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .countdown-item {
+        margin: 0.5rem;
+    }
+
+    .countdown-label {
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    #countdown {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+    }
+
+    .countdown-value {
+        font-size: 2rem;
+    }
+
+    .bg {
+        background-position: center;
+        background-size: cover;
+    }
 }
